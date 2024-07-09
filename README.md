@@ -23,3 +23,7 @@ angular:
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel:=/bumperbot_controller/cmd_vel_unstamped
 ```
+## check all the node Connections
+```
+  ros2 run tf2_tools view_frames
+```
