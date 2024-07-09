@@ -27,3 +27,13 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel
 ```
   ros2 run tf2_tools view_frames
 ```
+
+## install dependency using Package.xml
+```
+  rosdep install --from-paths /home/pdey/my_learning/ros2_amr/bumperbot_ws/src/bumperbot_mapping/ --ignore-src -r -y
+```
+
+## Run ekf node
+```
+  ros2 launch bumperbot_localization local_localization.launch.py
+```
